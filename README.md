@@ -39,10 +39,9 @@ def tic_tac_toe():
                 if board[row][col] == " ":
                     break
                 else:
-                    print("Gandu hai kya be ? Wahan already bhar rakkha hai . ")
+                    print(" Try Again , selected space is already occupied ")
             except (ValueError, IndexError):
-                print("Bhosdike , Chutiya hai kya !")
-        
+                print("Invalid input. Please enter row and column numbers between 0 and 2.")
         board[row][col] = player
         winner = check_winner(board)
         if winner:
